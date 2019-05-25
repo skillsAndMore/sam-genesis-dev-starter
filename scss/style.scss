@@ -20,6 +20,9 @@ Text Domain: sam-dev-starter
 // Import reset rules
 @import "partials/reset";
 
+// Import variables
+@import "partials/vars";
+
 // Import default rules
 @import "partials/default";
 
