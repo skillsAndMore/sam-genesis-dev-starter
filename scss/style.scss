@@ -32,6 +32,9 @@ Text Domain: sam-dev-starter
 // Import common rules
 @import "partials/common";
 
+// Import gutenberg rules
+@import "partials/gutenberg";
+
 // Import widgets rules
 @import "partials/widgets";
 
