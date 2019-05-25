@@ -34,7 +34,7 @@ add_action( 'enqueue_block_editor_assets', 'sam_dev_block_editor_styles' );
  * @since 2.7.0
  */
 function sam_dev_block_editor_styles() {
-
+	//Modifica con i font di base che carichi in functions.php
 	wp_enqueue_style(
 		'sam-dev-starter-gutenberg-fonts',
 		'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
