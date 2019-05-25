@@ -8,25 +8,6 @@
  * @link    https://skillsandmore.org/
  */
 
-add_action( 'wp_enqueue_scripts', 'sam_dev_enqueue_gutenberg_frontend_styles' );
-/**
- * Enqueues Gutenberg front-end styles.
- *
- * @since 2.7.0
- */
-function sam_dev_enqueue_gutenberg_frontend_styles() {
-
-	$child_theme_slug = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'sam-dev-starter';
-
-	wp_enqueue_style(
-		'sam-dev-starter-gutenberg',
-		get_stylesheet_directory_uri() . '/lib/gutenberg/front-end.css',
-		array( $child_theme_slug ),
-		CHILD_THEME_VERSION
-	);
-
-}
-
 add_action( 'enqueue_block_editor_assets', 'sam_dev_block_editor_styles' );
 /**
  * Enqueues Gutenberg admin editor fonts and styles.
