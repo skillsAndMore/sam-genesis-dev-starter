@@ -145,8 +145,8 @@ gulp.task("styles", () => {
 		.pipe(browserSync.stream()) // Reloads style.min.css if that is enqueued.
 		.pipe(
 			notify({
-				message: "\n\n✅  ===> STYLES — completed!\n",
-				onLast: true
+				"message": "\n\n✅  ===> STYLES — completed!\n",
+				"onLast": true
 			})
 		);
 });
